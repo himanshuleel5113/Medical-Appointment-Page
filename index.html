@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Appointment</title>
+</head>
+<script>
+    document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+event.preventDefault();
+
+alert('Appointment booked successfully!');
+});
+</script>
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, button {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+  h1{
+    text-align: center;
+    background-color: #4caf50;
+    font-size: 50px;
+  }
+</style>
+<body>
+    <header>
+        <h1>Health Appointment Booking</h1>
+    </header>
+    <nav>
+    </nav>
+    <main>
+        <section id="booking-form">
+            <h2>Book an Appointment</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br>
+
+                <input type="submit" value="Book Appointment">
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

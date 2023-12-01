@@ -1,0 +1,16 @@
+<head>
+<style>
+#pair{
+    color: rebeccapurple;
+}
+h1{
+    color: lightgrey;
+    font-size: 200px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+ <h1>Hello World</h1>
+ <p class="pair">HTML</p>
+</body>
